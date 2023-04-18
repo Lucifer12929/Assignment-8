@@ -1,0 +1,76 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.Home_top {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  padding: 1rem;
+  min-width: 35rem;
+  color: #fff;
+}
+
+.Home_top > span {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 5rem;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.add_button {
+  color: white;
+  border: none;
+  height: 25px;
+  font-size: 17px;
+  font-weight: 600;
+  aspect-ratio: 1/1;
+}
+.add_button:hover {
+  color: #16e9a2;
+  cursor: pointer;
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+.allFields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 880px) {
+  .Home {
+    padding: 0.2rem;
+    border: 2px solid red;
+  }
+  .Home_top {
+    padding: 0.5rem;
+  }
+  .Home_top > span {
+    padding: 0 0.6rem;
+    gap: 2rem;
+    font-size: 17px;
+    font-weight: 400;
+  }
+}
